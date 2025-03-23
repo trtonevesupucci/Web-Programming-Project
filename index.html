@@ -19,6 +19,13 @@
     <link rel="stylesheet" href="assets/css/owl-carousel.min.css">
     <link rel="stylesheet" href="assets/css/jquery.datetimepicker.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        main#spapp > section { display: none; } 
+        main#spapp > section:last-child { display: block; } 
+        @keyframes appear { from { width:0; opacity:0; } to { width:100%; opacity:1; } } 
+        main#spapp > section:target { display: block; animation: appear 0.1s linear 1; } 
+        main#spapp > section:target ~ * { display: none; }
+    </style>
 </head>
 <body>
     <!-- Preloader Starts -->
@@ -30,10 +37,16 @@
     <!-- Header Area Starts -->
 	<header class="header-area">
         <div class="container">
+            
             <div class="row">
+                
                 <div class="col-lg-2">
+                    
                     <div class="logo-area">
-                        <a href="index.html"><h1 style="color: black;">Nafaka</h1></a>
+                        
+                        
+                        <img src = "fnklogo.png" alt = "logo">
+                        <h1 class = "tekstnafaka" style="color: black;">Nafaka</h1>
                     </div>
                 </div>
                 <div class="col-lg-10">
@@ -55,6 +68,8 @@
                             </li>
                             <li><a href="contact-us.html">contact</a></li>
                             <li><a href="elements.html">Elements</a></li>
+                            <li id = "register"><a href = "register.html">register</a></li>
+                            <li id = "login"><a href = "login.html">login</a></li>
                         </ul>
                     </div>
                 </div>
@@ -70,7 +85,7 @@
                 <div class="col-lg-12">
                     <h6>the most interesting food in the world</h6>
                     <h1>Discover the <span class="prime-color">flavors</span><br>  
-                    <span class="style-change">of <span class="prime-color">food</span>fun</span></h1>
+                    <span class="style-change">of <span class="prime-color">nafaka</span></h1>
                 </div>
             </div>
         </div>
@@ -503,5 +518,6 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <script src="assets/js/vendor/jquery.datetimepicker.full.min.js"></script>
     <script src="assets/js/vendor/jquery.nice-select.min.js"></script>
     <script src="assets/js/main.js"></script>
+    
 </body>
 </html>
